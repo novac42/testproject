@@ -6,8 +6,8 @@ body:
   - type: input
     id: app-introduction
     attributes:
-      label: Background
-      description: May you briefly introduce what kind of app you are building?
+      label: Industry background
+      description: May you briefly introduce what kind of app you are building? 
     validations:
       required: false
   - type: textarea
