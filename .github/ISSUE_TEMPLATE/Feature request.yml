@@ -13,22 +13,22 @@ body:
   - type: textarea
     id: feature-need
     attributes:
-      label: Feature Need
+      label: Feature description
       description: May you help us understand why you need this feature? And some examples of the scenario/use cases you are trying to accomplish?
     validations:
       required: true
   - type: textarea
     id: existing-api
     attributes:
-      label: Existing API
-      description: Does this API/enhancement already exist in another WebView-like product (WebBrowser, CEF, etc.)?
+      label: Similar features in other products
+      description: Does this API/enhancement already exist in another WebView-like product (WebBrowser, CEF, etc.)? This is an optional question. 
     validations:
       required: false
   - type: textarea
     id: workaround
     attributes:
       label: Workaround
-      description: Any workaround you are using currently?
+      description: Any workaround you are using currently? This is an optional question. 
     validations:
       required: false
   - type: checkboxes
