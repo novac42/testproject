@@ -69,10 +69,10 @@ body:
     id: regression
     attributes:
       label: Regression
-      description: Was this working before but has regressed?
+      description: Was this working before, but has regressed?
       options:
-        - 'Yes'
-        - 'No'
+        - 'Yes, it used to work'
+        - 'No, first time seeing this'
     validations:
       required: false
   - type: input
