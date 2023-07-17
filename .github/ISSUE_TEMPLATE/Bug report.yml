@@ -66,8 +66,6 @@ body:
       options:
         - label: Yes
           required: false
-    validations:
-      required: false
   - type: input
     id: last-working-version
     attributes:
