@@ -37,9 +37,9 @@ body:
       label: Importance
       description: May you help us understand the importance of this ask to you?
       options:
-        - label: Blocking issue: my app's basic functions wouldn't work without this.
-        - label: Impactful: my app's user experience would be significantly compromised.
-        - label: Nice-to-have: there're other ways to tackle this, but would be good if there're official API support.
+        - label: Blocking issue. My app's basic functions wouldn't work without this.
+        - label: Impactful. My app's user experience would be significantly compromised.
+        - label: Nice to have. There're other ways to tackle this, but would be good if there're official API support.
     validations:
       required: true
   - type: checkboxes
