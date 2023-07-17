@@ -65,7 +65,6 @@ body:
       description: Was this working before but has regressed?
       options:
         - label: Yes
-        - label: No
     validations:
       required: false
   - type: input
