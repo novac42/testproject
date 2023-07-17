@@ -3,7 +3,7 @@ description: Suggest a new feature/enhancement for this project
 title: "[Feature]: "
 labels: ["enhancement"]
 body:
-  - type: Input
+  - type: input
     id: app-introduction
     attributes:
       label: Background
