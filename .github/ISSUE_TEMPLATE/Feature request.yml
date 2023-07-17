@@ -46,7 +46,7 @@ body:
     id: development-phase
     attributes:
       label: Development Phase
-      description: Could you please indicate the current stage of your application's development? Please select the option that best applies:
+      description: Could you please indicate the current stage of your application's development? Please select the option that best applies.
       options:
         - label: The app is being used by an enterprise user base. 
         - label: The app is being used by a consumer user base. 
