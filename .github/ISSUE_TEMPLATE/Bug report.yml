@@ -58,21 +58,6 @@ body:
         - Other
     validations:
       required: true
-  - type: checkboxes
-    id: regression
-    attributes:
-      label: Regression
-      description: Was this working before but has regressed?
-      options:
-        - label: Yes
-          required: false
-  - type: input
-    id: last-working-version
-    attributes:
-      label: Last Working Version
-      description: If yes, what version did this last work on?
-    validations:
-      required: false
   - type: textarea
     id: repro-steps
     attributes:
@@ -80,3 +65,23 @@ body:
       description: Minimal steps needed to reproduce the bug. Call out the Expected behavior, and the Actual behavior.
     validations:
       required: false
+
+	- type: dropdown
+	  id: regression
+	  attributes:
+	    label: Regression
+	    description: Was this working before but has regressed?
+	    options:
+	      - Yes
+	      - No
+	  validations:
+	    required: false
+
+  - type: input
+    id: last-working-version
+    attributes:
+      label: Last Working Version
+      description: If yes, what version did this last work on?
+    validations:
+      required: false
+
