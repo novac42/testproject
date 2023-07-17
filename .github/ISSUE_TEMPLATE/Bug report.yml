@@ -71,8 +71,8 @@ body:
       label: Regression
       description: Was this working before but has regressed?
       options:
-        - Yes
-        - No
+        - 'Yes'
+        - 'No'
     validations:
       required: false
   - type: input
