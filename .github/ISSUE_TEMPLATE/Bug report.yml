@@ -82,11 +82,3 @@ body:
       description: Minimal steps needed to reproduce the bug. Call out the Expected behavior, and the Actual behavior.
     validations:
       required: false
-  - type: checkboxes
-    id: terms
-    attributes:
-      label: Code of Conduct
-      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com)
-      options:
-        - label: I agree to follow this project's Code of Conduct
-          required: true
