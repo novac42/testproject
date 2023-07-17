@@ -1,1 +1,14 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Discussion board
+    url: https://github.com/MicrosoftEdge/WebView2Feedback/discussions
+    about: Please ask and answer questions here.
+
+issue_templates:
+  - name: Bug Report
+    description: File a bug report for WebView2
+    template: Bug report.yml
+  - name: Feature Request
+    description: Suggest an feature/enhancement for WebView2
+    template: Feature request.yml
 
