@@ -36,8 +36,9 @@ body:
     label: Framework
     options:
     - WPF
+    - Win32
     - Winform
-    - UWP
+    - UWP/WinUI2
     - Unity Plugin
   validations:
     required: true
