@@ -35,13 +35,13 @@ body:
     description: What framework are you using?
     label: Framework
     options:
-    - Win32
-    - WPF
-    - Winform
-    - WinUI2, UWP
-    - WinUI3
-    - Unity Plugin
-    - Other
+      Win32: Win32
+      WPF: WPF
+      Winform: Winform
+      WinUI2: UWP
+      WinUI3: WinUI3
+      Unity Plugin: Unity Plugin
+      Other: Other
   validations:
     required: true
 - id: os
