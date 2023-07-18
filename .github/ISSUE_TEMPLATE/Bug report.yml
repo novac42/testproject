@@ -25,7 +25,7 @@ body:
 - id: runtime-version
   type: input
   attributes:
-    description: Please enter the Runtime version you are using. (for example 114.0.1823.79)
+    description: Please enter the Runtime version you are using. (e.g. 114.0.1823.79)
     label: Runtime Version
   validations:
     required: true
@@ -35,13 +35,13 @@ body:
     description: What framework are you using?
     label: Framework
     options:
-      Win32: Win32
-      WPF: WPF
-      Winform: Winform
-      UWP: UWP
-      WinUI3: WinUI3
-      Unity Plugin: Unity Plugin
-      Other: Other
+    - Win32: Win32
+    - WPF: WPF
+    - Winform: Winform
+    - UWP: UWP
+    - WinUI3: WinUI3
+    - Unity Plugin: Unity Plugin
+    - Other: Other
   validations:
     required: true
 - id: os
@@ -50,13 +50,13 @@ body:
     description: What operating system are you using?
     label: OS
     options:
-    - Windows 10
-    - Windows 11
-    - Windows Server
-    - Xbox
-    - Hololens
-    - Earlier than Windows 10 (deprecated)
-    - Other
+    - Windows 10: Windows 10
+    - Windows 11: Windows 11
+    - Earlier than Windows 10 (deprecated): Earlier than Windows 10 (deprecated)
+    - Windows Server: Windows Server
+    - Xbox: Xbox
+    - Hololens: Hololens
+    - Other: Other
   validations:
     required: true
 - id: os-version
