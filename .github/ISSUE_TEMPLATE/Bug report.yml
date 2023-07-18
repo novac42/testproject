@@ -80,9 +80,8 @@ body:
     label: Regression
     options:
     - No, first time seeing this
-    - Runtime
-    - SDK
-    - Not a regression
+    - Regression in Runtime
+    - Regression in SDK
     - Don't know
   validations:
     required: true
@@ -90,6 +89,6 @@ body:
   type: input
   attributes:
     description: If this is a regression, what was the last working version of SDK and Runtime? (e.g. SDK 1.0.1774.30, Runtime 114.0.1823.32)
-    label: Last Working Version
+    label: If it's regression, last working version
   validations:
     required: false
