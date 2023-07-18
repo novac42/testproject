@@ -18,7 +18,7 @@ body:
 - id: sdk-version
   type: input
   attributes:
-    description: Please enter the SDK version you are using.(e.g. 1.0.1905-prerelease)
+    description: Please enter the SDK version you are using. (e.g. 1.0.1905-prerelease)
     label: SDK Version
   validations:
     required: true
@@ -35,6 +35,7 @@ body:
     description: What framework are you using?
     label: Framework
     options:
+    - Please select
     - WPF
     - Win32
     - Winform
