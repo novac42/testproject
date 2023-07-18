@@ -39,6 +39,7 @@ body:
     - Win32
     - Winform
     - UWP/WinUI2
+    - WinUI3
     - Unity Plugin
   validations:
     required: true
