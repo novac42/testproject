@@ -27,7 +27,7 @@ body:
   attributes:
     description: Please enter the Runtime version you are using. (e.g., 114.0.1823.79)
     label: Runtime Version
-    placeholder: 'Example: 114.0.1823.79'
+    placeholder: For example, 114.0.1823.79
   validations:
     required: true
 - id: framework
@@ -39,10 +39,10 @@ body:
     - Win32
     - WPF
     - Winform
-    - WinUI2/UWP
+    - WinUI2, UWP
     - WinUI3
     - Unity Plugin
-    - Other/not sure
+    - Other
     placeholder: Please select
   validations:
     required: true
@@ -66,7 +66,7 @@ body:
   attributes:
     description: Please enter the OS version you are using. (e.g., 22H2, 21H1, etc.)
     label: OS Version
-    placeholder: 'Example: 22H2'
+    placeholder: For example, 22H2
   validations:
     required: false
 - id: repro-steps
