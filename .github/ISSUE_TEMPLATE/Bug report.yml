@@ -50,13 +50,13 @@ body:
     description: What operating system are you using?
     label: Operating System
     options:
-    - Windows 10: Windows 10
-    - Windows 11: Windows 11
-    - Earlier than Windows 10 (deprecated): Earlier than Windows 10 (deprecated)
-    - Windows Server: Windows Server
-    - Xbox: Xbox
-    - Hololens: Hololens
-    - Other: Other
+    - label: Windows 10
+    - label: Windows 11
+    - label: Earlier than Windows 10 (deprecated)
+    - label: Windows Server
+    - label: Xbox
+    - label: Hololens
+    - label: Other
   validations:
     required: true
 - id: os-version
