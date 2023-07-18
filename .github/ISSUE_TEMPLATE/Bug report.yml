@@ -1,84 +1,113 @@
-name: Bug Report
-description: File a bug report
-title: "[Bug]: "
-labels: ["bug"]
 body:
-  - type: markdown
-    attributes:
-      value: |
-        Thanks for taking the time to fill out this bug report!
-  - type: textarea
-    id: what-happened
-    attributes:
-      label: What happened?
-      description: Please tell us what's not working as expected. Please include callstacks and error messages if necessary.
-      placeholder: Tell us what you see!
-    validations:
-      required: true
-  - type: dropdown
-    id: runtime
-    attributes:
-      label: Runtime
-      description: What runtime of our software are you using?
-      options:
-        - Evergreen
-        - Fixed version
-    validations:
-      required: true
-  - type: input
-    id: sdk-version
-    attributes:
-      label: SDK Version
-      description: Please enter the SDK version you are using.
-    validations:
-      required: true
-  - type: dropdown
-    id: framework
-    attributes:
-      label: Framework
-      description: What framework are you using?
-      options:
-        - Win32
-        - WPF
-        - Winform
-        - UWP
-        - WinUI3
-        - Other/not sure
-    validations:
-      required: true
-  - type: dropdown
-    id: os
-    attributes:
-      label: OS
-      description: What operating system are you using?
-      options:
-        - Win11
-        - Win10
-        - Win7
-        - Other
-    validations:
-      required: true
-  - type: textarea
-    id: repro-steps
-    attributes:
-      label: Repro Steps
-      description: Minimal steps needed to reproduce the bug. Call out the Expected behavior, and the Actual behavior.
-    validations:
-      required: false
-  - type: dropdown
-    id: regression
-    attributes:
-      label: Regression
-      description: Was this working before, but has regressed?
-      options:
-        - 'Yes, it used to work'
-        - 'No, first time seeing this'
-    validations:
-      required: false
-  - type: input
-    id: last-working-version
-    attributes:
-      label: Last Working Version
-      description: If yes, what version did this last work on?
-    validations:
-      required: false
+- attributes:
+    value: 'Thanks for taking the time to fill out this bug report! It will greatly assist us in accurately identifying the issue.'
+
+      '
+  type: markdown
+- attributes:
+    description: Please tell us what's not working as expected. Please include callstacks
+      and error messages if possible.
+    label: What happened?
+    placeholder: Please describe the issue you encountered
+  id: what-happened
+  type: textarea
+  validations:
+    required: true
+- attributes:
+    description: Please enter the SDK version you are using.
+    label: SDK Version
+  id: sdk-version
+  type: input
+  validations:
+    required: true
+- attributes:
+    description: Please enter the Runtime version you are using. (e.g., 114.0.1823.79)
+    label: Runtime Version
+    placeholder: 'Example: 114.0.1823.79'
+  id: runtime-version
+  type: input
+  validations:
+    required: true
+- attributes:
+    description: What framework are you using?
+    label: Framework
+    options:
+    - Win32
+    - WPF
+    - Winform
+    - WinUI2/UWP
+    - WinUI3
+    - Unity Plugin
+    - Other/not sure
+    placeholder: Please select
+  id: framework
+  type: dropdown
+  validations:
+    required: true
+- attributes:
+    description: What operating system are you using?
+    label: OS
+    options:
+    - Windows 10
+    - Windows 11
+    - Windows Server
+    - Xbox
+    - Hololens
+    - Earlier than Windows 10 (deprecated)
+    - Other
+  id: os
+  type: checkboxes
+  validations:
+    required: true
+- attributes:
+    description: Please enter the OS version you are using. (e.g., 22H2, 21H1, etc.)
+    label: OS Version
+    placeholder: 'Example: 22H2'
+  id: os-version
+  type: input
+  validations:
+    required: false
+- attributes:
+    description: Minimal steps needed to reproduce the bug. Please be clear on what
+      the expected behavior is V.S. what the actual behavior is. Please provide a minimal
+      sample app that demonstrates the issue, if possible.
+    label: Repro Steps
+  id: repro-steps
+  type: textarea
+  validations:
+    required: false
+- attributes:
+    description: Was this working before, but has regressed?
+    label: Regression
+    options:
+    - No, first time seeing this
+    - Runtime
+    - SDK
+    - Not a regression
+    - Don't know
+    placeholder: Please select
+  id: regression
+  type: dropdown
+  validations:
+    required: true
+- attributes:
+    description: If yes, what version did this last work on?
+    label: Last Working Version
+  id: last-working-version
+  type: input
+  validations:
+    required: false
+- attributes:
+    description: If this is a regression, what was the last working version of SDK
+      and Runtime?
+    label: Last Working Version
+    placeholder: 'Example: SDK 1.0.1774.30, Runtime 114.0.1823.32'
+  id: last-working-version
+  type: input
+  validations:
+    required: false
+description: File a bug report
+labels:
+- bug
+name: Bug Report
+title: '[Bug]: '
