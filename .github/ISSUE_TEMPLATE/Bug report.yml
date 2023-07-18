@@ -1,32 +1,38 @@
+name: Bug Report
+title: '[Bug]: '
+description: File a bug report
+labels:
+- bug
 body:
-- attributes:
+- type: markdown
+  attributes:
     value: 'Thanks for taking the time to fill out this bug report! It will greatly assist us in accurately identifying the issue.'
-  type: markdown
-- attributes:
-    description: Please tell us what's not working as expected. Please include callstacks
-      and error messages if possible.
+- id: what-happened
+  type: textarea
+  attributes:
+    description: Please tell us what's not working as expected. Please include callstacks and error messages if possible.
     label: What happened?
     placeholder: Please describe the issue you encountered
-  id: what-happened
-  type: textarea
   validations:
     required: true
-- attributes:
+- id: sdk-version
+  type: input
+  attributes:
     description: Please enter the SDK version you are using.
     label: SDK Version
-  id: sdk-version
-  type: input
   validations:
     required: true
-- attributes:
+- id: runtime-version
+  type: input
+  attributes:
     description: Please enter the Runtime version you are using. (e.g., 114.0.1823.79)
     label: Runtime Version
     placeholder: 'Example: 114.0.1823.79'
-  id: runtime-version
-  type: input
   validations:
     required: true
-- attributes:
+- id: framework
+  type: dropdown
+  attributes:
     description: What framework are you using?
     label: Framework
     options:
@@ -38,11 +44,11 @@ body:
     - Unity Plugin
     - Other/not sure
     placeholder: Please select
-  id: framework
-  type: dropdown
   validations:
     required: true
-- attributes:
+- id: os
+  type: checkboxes
+  attributes:
     description: What operating system are you using?
     label: OS
     options:
@@ -53,28 +59,26 @@ body:
     - Hololens
     - Earlier than Windows 10 (deprecated)
     - Other
-  id: os
-  type: checkboxes
   validations:
     required: true
-- attributes:
+- id: os-version
+  type: input
+  attributes:
     description: Please enter the OS version you are using. (e.g., 22H2, 21H1, etc.)
     label: OS Version
     placeholder: 'Example: 22H2'
-  id: os-version
-  type: input
   validations:
     required: false
-- attributes:
-    description: Minimal steps needed to reproduce the bug. Please be clear on what
-      the expected behavior is V.S. what the actual behavior is. Please provide a minimal
-      sample app that demonstrates the issue, if possible.
-    label: Repro Steps
-  id: repro-steps
+- id: repro-steps
   type: textarea
+  attributes:
+    description: Minimal steps needed to reproduce the bug. Please be clear on what the expected behavior is V.S. what the actual behavior is. Please provide a minimal sample app that demonstrates the issue, if possible.
+    label: Repro Steps and sample app
   validations:
     required: false
-- attributes:
+- id: regression
+  type: dropdown
+  attributes:
     description: Was this working before, but has regressed?
     label: Regression
     options:
@@ -84,28 +88,13 @@ body:
     - Not a regression
     - Don't know
     placeholder: Please select
-  id: regression
-  type: dropdown
   validations:
     required: true
-- attributes:
-    description: If yes, what version did this last work on?
-    label: Last Working Version
-  id: last-working-version
+- id: last-working-version
   type: input
-  validations:
-    required: false
-- attributes:
-    description: If this is a regression, what was the last working version of SDK
-      and Runtime?
-    label: Last Working Version
+  attributes:
+    description: If this is a regression, what was the last working version of SDK and Runtime?
+    label: Last Working Version Detailed
     placeholder: 'Example: SDK 1.0.1774.30, Runtime 114.0.1823.32'
-  id: last-working-version
-  type: input
   validations:
     required: false
-description: File a bug report
-labels:
-- bug
-name: Bug Report
-title: '[Bug]: '
