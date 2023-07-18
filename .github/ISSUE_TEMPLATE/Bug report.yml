@@ -70,7 +70,7 @@ body:
   type: textarea
   attributes:
     description: Minimal steps needed to reproduce the bug. Please be clear on what the expected behavior is V.S. what the actual behavior is. Please provide a minimal sample app that demonstrates the issue, if possible.
-    label: Repro Steps and sample app
+    label: Repro steps and sample app
   validations:
     required: false
 - id: regression
