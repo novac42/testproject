@@ -42,7 +42,6 @@ body:
     - WinUI3
     - Unity Plugin
     - Other
-    placeholder: Please select
   validations:
     required: true
 - id: os
@@ -85,14 +84,12 @@ body:
     - SDK
     - Not a regression
     - Don't know
-    placeholder: Please select
   validations:
     required: true
 - id: last-working-version
   type: input
   attributes:
-    description: If this is a regression, what was the last working version of SDK and Runtime?
+    description: If this is a regression, what was the last working version of SDK and Runtime? (e.g. SDK 1.0.1774.30, Runtime 114.0.1823.32)
     label: Last Working Version Detailed
-    placeholder: 'Example: SDK 1.0.1774.30, Runtime 114.0.1823.32'
   validations:
     required: false
