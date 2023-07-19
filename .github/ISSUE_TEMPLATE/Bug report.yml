@@ -1,4 +1,4 @@
-name: Bug Report form template
+name: Bug Report
 title: '[Bug]: '
 description: File a bug report
 labels: ["bug"]
