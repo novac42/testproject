@@ -40,8 +40,7 @@ body:
      options:
        - label: Stable release 
        - label: Prerelease (Canary/Dev/Beta)      
-  validations:
-      required: true
+  
 
 - id: runtime-version
   type: input
@@ -87,8 +86,7 @@ body:
     - label: Xbox
     - label: Hololens
     - label: Other
-  validations:
-    required: true
+
 - id: os-version
   type: input
   attributes:
