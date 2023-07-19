@@ -65,7 +65,7 @@ body:
     - Please select
     - WPF
     - Win32
-    - Winform
+    - Winforms
     - UWP/WinUI2
     - WinUI3
     - Unity Plugin
