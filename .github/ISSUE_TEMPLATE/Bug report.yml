@@ -21,9 +21,20 @@ body:
      label: Importance
      description: May you help us understand the level of importance of this ask to you?
      options:
-       - label: Blocking. My app's basic functions stopped working.
+       - label: Blocking. My app's basic functions cannot work.
        - label: Important. My app's user experience is significantly compromised.
        - label: Moderate. This issue has a certain impact on my app. 
+  validations:
+      required: true
+
+- id: runtime-channel
+  type: checkboxes
+  attributes:
+     label: Runtime Channel
+     description: Are you using stable release or prerelease of WebView2 runtime?
+     options:
+       - label: Stable release 
+       - label: Prerelease (Canary/Dev Channel)      
   validations:
       required: true
 
