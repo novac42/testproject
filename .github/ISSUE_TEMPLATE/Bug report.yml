@@ -15,16 +15,16 @@ body:
     placeholder: Please describe the issue you encountered, and minimal steps needed to reproduce the bug.
   validations:
     required: true
-- type: checkboxes
-    id: importance
-    attributes:
-      label: Importance
-      description: May you help us understand the level of importance of this ask to you?
-      options:
-        - label: Blocking. My app's basic functions stopped working.
-        - label: Important. My app's user experience is significantly compromised.
-        - label: Moderate. This issue has a certain impact on my app. 
-    validations:
+- id: importance
+  type: checkboxes
+  attributes:
+     label: Importance
+     description: May you help us understand the level of importance of this ask to you?
+     options:
+       - label: Blocking. My app's basic functions stopped working.
+       - label: Important. My app's user experience is significantly compromised.
+       - label: Moderate. This issue has a certain impact on my app. 
+  validations:
       required: true
 
 - id: runtime-version
