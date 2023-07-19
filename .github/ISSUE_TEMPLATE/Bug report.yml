@@ -11,8 +11,16 @@ body:
   type: textarea
   attributes:
     description: Please tell us what's not working as expected. Please include callstacks and error messages if possible.
-    label: What happened?
-    placeholder: Please describe the issue you encountered
+    label: What happened and how to repro
+    placeholder: Please describe the issue you encountered, and minimal steps needed to reproduce the bug.
+  validations:
+    required: true
+
+- id: runtime-version
+  type: input
+  attributes:
+    description: Please enter the Runtime version you are using. (e.g. 114.0.1823.79)
+    label: Runtime Version
   validations:
     required: true
 - id: sdk-version
@@ -22,13 +30,7 @@ body:
     label: SDK Version
   validations:
     required: true
-- id: runtime-version
-  type: input
-  attributes:
-    description: Please enter the Runtime version you are using. (e.g. 114.0.1823.79)
-    label: Runtime Version
-  validations:
-    required: true
+
 - id: framework
   type: dropdown
   attributes:
