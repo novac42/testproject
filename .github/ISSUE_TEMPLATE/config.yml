@@ -11,4 +11,7 @@ issue_templates:
   - name: Feature Request
     description: Suggest an feature/enhancement for WebView2
     template: Feature request.yml
+  - name: Bug Report_form
+    description: File a bug report for WebView2
+    template: Bug Report new form.yml
 
