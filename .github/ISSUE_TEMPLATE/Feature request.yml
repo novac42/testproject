@@ -12,8 +12,8 @@ body:
     id: feature-need
     attributes:
       label: Why do you need this feature?
-      description: Please help us understand why you need this feature. If possible, briefly introduce what kind of app you are building, examples of the scenario/use cases you are trying to accomplish.
-      placeholder: e.g. I'm building an video-editing app, and there's a scenario where I need to do... but it's currently not supported because... 
+      description: Please help us understand why you need this feature. It would be great to briefly introduce what kind of app you are building, examples of the scenario/use cases you are trying to accomplish.
+      placeholder: e.g. I'm building an video-editing app, and I need to do xyz when ... but I'm having trouble achieving this because... 
     validations:
       required: true
 
@@ -48,7 +48,7 @@ body:
     id: solution
     attributes:
       label: Solution and workaround
-      description: Describe the solution you'd like and workaround you've considered.
+      description: Describe the solution you'd suggest, and workaround you've considered.
       placeholder: e.g. I've considered using... but it's not ideal because... I would suggest...
     validations:
       required: false
