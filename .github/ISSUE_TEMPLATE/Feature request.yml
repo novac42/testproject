@@ -1,57 +1,57 @@
-name: Feature Request/API Enhancement
-description: Suggest a new feature/enhancement for this project
+name: Feature Request
+description: Share your idea for a new feature/API enhancement
 title: "[Feature]: "
 labels: ["enhancement"]
 body:
-  - type: input
-    id: app-introduction
+  - type: markdown
     attributes:
-      label: Industry background
-      description: May you briefly introduce what kind of app you are building? 
-    validations:
-      required: false
+      value: 
+        Thanks for taking the time to fill out this feature request. Here is a [good sample report](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3648)
+
   - type: textarea
     id: feature-need
     attributes:
-      label: Scenario and problems
-      description: May you help us understand why you need this feature? Would be great to give a few examples of the scenario/use cases you are trying to accomplish.
+      label: Why do you need this feature?
+      description: Please help us understand why you need this feature. If possible, briefly introduce what kind of app you are building, examples of the scenario/use cases you are trying to accomplish.
+      placeholder: e.g. I'm building an video-editing app, and there's a scenario where I need to do... but it's currently not supported because... 
     validations:
       required: true
-  - type: textarea
-    id: existing-api
-    attributes:
-      label: Similar features in other products
-      description: Does this API/enhancement already exist in another WebView-like product (WebBrowser, CEF, etc.)? This is an optional question. 
-    validations:
-      required: false
-  - type: textarea
-    id: workaround
-    attributes:
-      label: Workaround
-      description: Any workaround you are using currently? This is an optional question. 
-    validations:
-      required: false
-  - type: checkboxes
+
+  - type: dropdown
     id: importance
     attributes:
       label: Importance
       description: May you help us understand the importance of this ask to you?
       options:
-        - label: Critical. My app's basic functions wouldn't work without it.
-        - label: Impactful. My app's user experience would be significantly compromised without it.
-        - label: Nice to have. There're other ways to tackle this, but having official API support would be beneficial.
+        - ----Please select----
+        - Critical. My app's basic functions wouldn't work without it.
+        - Impactful. My app's user experience would be significantly compromised without it.
+        - Nice to have. There're other ways to tackle this, but having official API support would be beneficial.
     validations:
       required: true
-  - type: checkboxes
-    id: development-phase
+
+  - type: dropdown
+    id: timeline
     attributes:
-      label: Development Phase
-      description: Could you please indicate the current stage of your application's development? Please select the option that best applies.
+      label: Timeline
+      description: Any pending timeline for your app that depend on this particular ask?
       options:
-        - label: The app is being used by an enterprise user base. 
-        - label: The app is being used by a consumer user base. 
-        - label: The app has not been released yet, but there's a commitment to do so. 
-        - label: The app is in exploratory phase and future release plans are TBD. 
+        - ----Please select----
+        - Within the next 6 months
+        - Within 1 year
+        - Within the next 1-2 years
+        - To be determined
+        - Not time-sensitive
     validations:
       required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Solution and workaround
+      description: Describe the solution you'd like and workaround you've considered.
+      placeholder: e.g. I've considered using... but it's not ideal because... I would suggest...
+    validations:
+      required: false
+
+
 
