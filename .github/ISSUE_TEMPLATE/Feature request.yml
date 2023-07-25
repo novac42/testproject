@@ -37,9 +37,9 @@ body:
       description: Any pending timeline for your app that depend on this particular ask?
       options:
         - ----Please select----
-        - Within the next 6 months
-        - Within 1 year
-        - Within the next 1-2 years
+        - Urgent - Within the next 6 months
+        - Pressing - Within 1 year
+        - Moderate - Within the next 1-2 years
         - To be determined
         - Not time-sensitive
     validations:
