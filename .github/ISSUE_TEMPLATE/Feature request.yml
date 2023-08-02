@@ -22,16 +22,16 @@ body:
     attributes:
       label: App background
       description: If possible, it would be great for us to have a better understanding of what your app do. If it's been shared in another issue opened by you, you can skip this question.
-      placeholder: e.g. It's a video-editing app for professional editors
+      placeholder: e.g. our app handles form submission and printing in hospital kiosks
     validations:
       required: false
 
   - type: textarea
     id: usecases
     attributes:
-      label: The scenario/use case where you need this feature
+      label: The scenario/use case where you would use this feature
       description: If possible, please shed some light on the scenario/use cases you are trying to accomplish.
-      placeholder: For example, when user's playing games, I need to forward the keyboard input to the host app. 
+      placeholder: For example, our user need to print out a report based on a pre-defined template. We need to set the print options in a dialog box with values defined in the template. 
     validations:
       required: false
 
@@ -74,7 +74,7 @@ body:
     id: workaround
     attributes:
       label: Workaround
-      description: If available, you can introduce the workaround you tried here.
+      description: If available, you can introduce the workaround you considered here.
       placeholder: e.g. I've considered using... but it's not ideal because...
     validations:
       required: false
