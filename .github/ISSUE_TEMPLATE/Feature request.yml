@@ -17,12 +17,12 @@ body:
     validations:
       required: true
 
-  - type: textarea
+  - type: input
     id: app-background
     attributes:
       label: App background
       description: If possible, it would be great for us to have a better understanding of what your app do. If it's been shared in another issue opened by you, you can skip this question.
-      placeholder: e.g. I'm building an video-editing app
+      placeholder: e.g. It's a video-editing app for professional editors
     validations:
       required: false
 
