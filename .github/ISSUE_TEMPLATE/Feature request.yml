@@ -11,11 +11,29 @@ body:
   - type: textarea
     id: feature-need
     attributes:
-      label: Why do you need this feature?
-      description: Please help us understand why you need this feature. It would be great to briefly introduce what kind of app you are building, examples of the scenario/use cases you are trying to accomplish.
-      placeholder: e.g. I'm building an video-editing app, and I need to do xyz when ... but I'm having trouble achieving this because... 
+      label: Describe the feature/enhancement you need
+      description: Please describe what you want to happen, or what problem you are seeing without this feature. 
+      placeholder: I need to do xyz when ... but I'm having trouble achieving this because... 
     validations:
       required: true
+
+  - type: textarea
+    id: app-background
+    attributes:
+      label: App background
+      description: If possible, it would be great for us to have a better understanding of what your app do. If it's been shared in another issue opened by you, you can skip this question.
+      placeholder: e.g. I'm building an video-editing app
+    validations:
+      required: false
+
+  - type: textarea
+    id: usecases
+    attributes:
+      label: The scenario/use case where you need this feature
+      description: If possible, please shed some light on the scenario/use cases you are trying to accomplish.
+      placeholder: For example, when user's playing games, I need to forward the keyboard input to the host app. 
+    validations:
+      required: false
 
   - type: dropdown
     id: importance
@@ -45,13 +63,20 @@ body:
     validations:
       required: true
   - type: textarea
-    id: solution
+    id: suggested-implementation
     attributes:
-      label: Solution and workaround
-      description: Describe the solution you'd suggest, and workaround you've considered.
-      placeholder: e.g. I've considered using... but it's not ideal because... I would suggest...
+      label: Suggested implementation
+      description: If you have solution ideas you'd like to suggest, please describe here. 
+      placeholder: I'd like to suggest...
     validations:
       required: false
-
+  - type: textarea
+    id: workaround
+    attributes:
+      label: Workaround
+      description: If available, you can introduce the workaround you tried here.
+      placeholder: e.g. I've considered using... but it's not ideal because...
+    validations:
+      required: false
 
 
