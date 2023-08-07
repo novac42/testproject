@@ -16,14 +16,14 @@ body:
   validations:
     required: true
 - id: importance
-  type: checkboxes
+  type: dropdown
   attributes:
      label: Importance
      description: May you help us understand the level of importance of this ask to you?
      options:
-       - label: Blocking. My app's basic functions cannot work.
-       - label: Important. My app's user experience is significantly compromised.
-       - label: Moderate. This issue has a certain impact on my app. 
+       - Blocking. My app's basic functions cannot work.
+       - Important. My app's user experience is significantly compromised.
+       - Moderate. This issue has a certain impact on my app. 
   validations:
       required: true
 - type: markdown
