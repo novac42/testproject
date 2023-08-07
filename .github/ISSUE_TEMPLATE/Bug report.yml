@@ -62,7 +62,6 @@ body:
     description: What framework are you using?
     label: Framework
     options:
-    - Please select
     - WPF
     - Win32
     - Winforms
