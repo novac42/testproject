@@ -6,7 +6,7 @@ body:
   - type: markdown
     attributes:
       value: 
-        Thanks for taking the time to fill out this feature request. Here is a [good sample report](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3683)
+        #### Thanks for taking the time to fill out this feature request. Here is a [good sample report](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3683)
 
   - type: textarea
     id: feature-need
